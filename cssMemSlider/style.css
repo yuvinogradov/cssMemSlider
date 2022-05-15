@@ -10,7 +10,7 @@ body {
 
 .wrapper {
   width: 70vw;
-  max-width: 700px;
+  max-width: 44rem;
   margin: 10vh auto;
   display: flex;
   flex-wrap: wrap;
@@ -25,7 +25,7 @@ input {
   width: 100%;
   height: auto;
   overflow: hidden;
-  box-shadow: 2px 2px 20px 6px #000;
+  box-shadow: 0.3rem 0.3rem 1.25rem 0.5rem #000;
 }
 
 .slider-images {
@@ -35,8 +35,8 @@ input {
 }
 
 .slide {
-  width: 700px;
-  height: 400px;
+  width: 44rem;
+  height: 25rem;
   object-fit: cover;
   background-size: 100% 100%;
   background-repeat: no-repeat;
@@ -66,8 +66,8 @@ img {
 
 .slider-caption {
   margin: 3vh 0;
-  width: 415px;
-  height: 46px;
+  width: 25rem;
+  height: 3rem;
   overflow: hidden;
 }
 
@@ -109,17 +109,17 @@ img {
 label {
   display: inline-block;
   text-align: center;
-  width: 25px;
-  height: 25px;
-  line-height: 22px;
+  width: 1.5rem;
+  height: 1.5rem;
+  line-height: 1.5rem;
   cursor: pointer;
 }
 
 .circle {
   display: inline-block;
   box-sizing: border-box;
-  width: 15px;
-  height: 15px;
+  width: 1rem;
+  height: 1rem;
   border-radius: 50%;
   vertical-align: middle;
   background-color: rgb(73, 167, 255);
@@ -135,7 +135,7 @@ label:hover .circle {
 #radio4:checked ~ .navigation .navigation4 .circle,
 #radio5:checked ~ .navigation .navigation5 .circle {
   background: transparent;
-  border: 2px solid rgb(73, 167, 255);
+  border: 0.1rem solid rgb(73, 167, 255);
 }
 
 #radio1:checked ~ .navigation .navigation1:hover .circle,
@@ -156,18 +156,18 @@ label:hover .circle {
 
 @media (max-width: 768px) {
   .wrapper {
-    width: 400px;
+    width: 25rem;
     margin: 10% auto;
     justify-content: center;
   }
 
   .slides-wrapper {
-    height: 300px;
+    height: 20rem;
   }
 
   .slide {
-    width: 400px;
-    height: 300px;
+    width: 25rem;
+    height: 20rem;
   }
 
   .slider-caption {
@@ -176,10 +176,10 @@ label:hover .circle {
   }
 
   .text {
-    padding: 3vh 0;
+    /* padding: 3vh 0; */
   }
 
   .navigation {
-    margin-top: 16px;
+    margin-top: 1rem;
   }
 }
