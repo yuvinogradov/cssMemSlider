@@ -4,19 +4,230 @@
 }
 
 body {
-  background-color: black;
+  height: 1vh;
+  background-color: #242424;
 }
 
-.slider {
-  width: 1000px;
-  height: 600px;
+.wrapper {
+  width: 760px;
+  margin: 40px auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.slides-wrapper {
+  width: 100%;
+  /* height: 40px;
   overflow: hidden;
-  border: 1px solid wheat;
+  width: 40px; */
+  height: auto;
+  overflow: hidden;
+  box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.4);
 }
 
-.middle {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%);
+.slider-images {
+  display: flex;
+  width: 3500px;
+  transition: all 0.5s;
+}
+
+.slide {
+  width: 700px;
+  height: 400px;
+  object-fit: cover;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+
+#radio1:checked ~ .slides-wrapper .slider-images {
+  margin-left: 0;
+}
+#radio2:checked ~ .slides-wrapper .slider-images {
+  margin-left: -100%;
+}
+#radio3:checked ~ .slides-wrapper .slider-images {
+  margin-left: -200%;
+}
+#radio4:checked ~ .slides-wrapper .slider-images {
+  margin-left: -300%;
+}
+#radio5:checked ~ .slides-wrapper .slider-images {
+  margin-left: -400%;
+}
+
+.image1 {
+  background-image: url("./images/meme1.webp");
+}
+.image2 {
+  background-image: url("./images/meme2.webp");
+}
+.image3 {
+  background-image: url("./images/meme3.webp");
+}
+.image4 {
+  background-image: url("./images/meme4.webp");
+}
+.image5 {
+  background-image: url("./images/meme5.webp");
+}
+
+.slider-caption {
+  width: 300px;
+  height: 50px;
+  overflow: hidden;
+}
+
+.text-wrapper {
+  width: 500%;
+  display: flex;
+  transition: all 0.5s;
+}
+
+#radio1:checked ~ .slider-caption .text-wrapper {
+  margin-left: 0;
+}
+#radio2:checked ~ .slider-caption .text-wrapper {
+  margin-left: -100%;
+}
+#radio3:checked ~ .slider-caption .text-wrapper {
+  margin-left: -200%;
+}
+#radio4:checked ~ .slider-caption .text-wrapper {
+  margin-left: -300%;
+}
+#radio5:checked ~ .slider-caption .text-wrapper {
+  margin-left: -400%;
+}
+
+.text {
+  width: 100%;
+  padding: 20px 0;
+  font-family: "Nunito", sans-serif;
+  font-size: 1em;
+  color: #fff;
+}
+
+.navigaion {
+  margin: 20px 0;
+  display: flex;
+}
+
+label {
+  display: inline-block;
+  text-align: center;
+  width: 25px;
+  height: 25px;
+  line-height: 22px;
+  cursor: pointer;
+}
+
+.circle {
+  display: inline-block;
+  box-sizing: border-box;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  vertical-align: middle;
+  background-color: rgb(73, 167, 255);
+}
+
+label:hover .circle {
+  background-color: #fff;
+}
+
+#radio1:checked ~ .navigation .navigation1 .circle,
+#radio2:checked ~ .navigation .navigation2 .circle,
+#radio3:checked ~ .navigation .navigation3 .circle,
+#radio4:checked ~ .navigation .navigation4 .circle,
+#radio5:checked ~ .navigation .navigation5 .circle {
+  background: transparent;
+  border: 2px solid rgb(73, 167, 255);
+}
+
+#radio1:checked ~ .navigation .navigation1:hover .circle,
+#radio2:checked ~ .navigation .navigation2:hover .circle,
+#radio3:checked ~ .navigation .navigation3:hover .circle,
+#radio4:checked ~ .navigation .navigation4:hover .circle,
+#radio5:checked ~ .navigation .navigation5:hover .circle {
+  border-color: #fff;
+}
+
+#radio1:active ~ .navigaion .navigation1 .circle:hover,
+#radio2:active ~ .navigaion .navigation2 .circle:hover,
+#radio3:active ~ .navigaion .navigation3 .circle:hover,
+#radio4:active ~ .navigaion .navigation4 .circle:hover,
+#radio5:active ~ .navigaion .navigation5 .circle:hover {
+  background-color: rgb(207, 206, 206);
+}
+
+@media (max-width: 768px) {
+  .wrapper {
+    width: 500px;
+    margin: 10% auto;
+  }
+
+  .slider-img {
+    height: 281px;
+  }
+
+  .img {
+    width: 500px;
+    height: 281px;
+  }
+}
+
+@media (max-width: 768px) {
+  .wrapper {
+    width: 400px;
+    margin: 10% auto;
+    justify-content: center;
+  }
+
+  .slider-img {
+    height: 225px;
+  }
+
+  .img {
+    width: 400px;
+    height: 225px;
+  }
+
+  .slider-text {
+    order: 2;
+    width: 100%;
+  }
+
+  .text {
+    padding: 0;
+  }
+
+  .panel {
+    order: 1;
+  }
+}
+
+@media (max-width: 420px) {
+  .wrapper {
+    width: 300px;
+    margin: 20% auto;
+  }
+
+  .slides-wrapper {
+    height: 168px;
+  }
+
+  .slide {
+    width: 300px;
+    height: 168px;
+  }
+
+  .text {
+    font-size: 0.8em;
+  }
+
+  .circle {
+    width: 10px;
+    height: 10px;
+  }
 }
