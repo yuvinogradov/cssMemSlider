@@ -151,7 +151,7 @@ label:hover .circle {
 #radio3:active ~ .navigation .navigation3 .circle:hover,
 #radio4:active ~ .navigation .navigation4 .circle:hover,
 #radio5:active ~ .navigation .navigation5 .circle:hover {
-  background-color: rgb(207, 206, 206);
+  background-color: rgb(255, 238, 0);
 }
 
 @media (max-width: 768px) {
