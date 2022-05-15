@@ -9,8 +9,9 @@ body {
 }
 
 .wrapper {
-  width: 700px;
-  margin: 40px auto;
+  width: 70vw;
+  max-width: 700px;
+  margin: 10vh auto;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -64,7 +65,8 @@ img {
 }
 
 .slider-caption {
-  width: 490px;
+  margin: 3vh 0;
+  width: 415px;
   height: 46px;
   overflow: hidden;
 }
@@ -93,14 +95,14 @@ img {
 
 .text {
   width: 100%;
-  padding: 20px 0;
+  /* padding: 1rem 0; */
   font-family: "Brush Script MT", cursive;
-  font-size: 1em;
+  font-size: 1rem;
   color: #fff;
 }
 
 .navigation {
-  margin: 20px 0;
+  padding: 3vh 0;
   display: flex;
 }
 
@@ -174,7 +176,7 @@ label:hover .circle {
   }
 
   .text {
-    padding: 16px 0;
+    padding: 3vh 0;
   }
 
   .navigation {
