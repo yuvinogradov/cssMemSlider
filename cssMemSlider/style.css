@@ -49,19 +49,19 @@ img {
 }
 
 #radio1:checked ~ .slides-wrapper .slider-images {
-  margin-left: 0;
+  transform: translateX(0%);
 }
 #radio2:checked ~ .slides-wrapper .slider-images {
-  margin-left: -100%;
+  transform: translateX(-20%);
 }
 #radio3:checked ~ .slides-wrapper .slider-images {
-  margin-left: -200%;
+  transform: translateX(-40%);
 }
 #radio4:checked ~ .slides-wrapper .slider-images {
-  margin-left: -300%;
+  transform: translateX(-60%);
 }
 #radio5:checked ~ .slides-wrapper .slider-images {
-  margin-left: -400%;
+  transform: translateX(-80%);
 }
 
 .slider-caption {
@@ -72,31 +72,31 @@ img {
 }
 
 .text-wrapper {
-  width: 500%;
+  width: 2500%;
   display: flex;
-  transition: all 0.5s;
+  transition: all 0.8s;
+  margin-top: 0.25rem;
 }
 
 #radio1:checked ~ .slider-caption .text-wrapper {
-  margin-left: 0;
+  transform: translateX(0%);
 }
 #radio2:checked ~ .slider-caption .text-wrapper {
-  margin-left: -100%;
+  transform: translateX(-20%);
 }
 #radio3:checked ~ .slider-caption .text-wrapper {
-  margin-left: -200%;
+  transform: translateX(-40%);
 }
 #radio4:checked ~ .slider-caption .text-wrapper {
-  margin-left: -300%;
+  transform: translateX(-60%);
 }
 #radio5:checked ~ .slider-caption .text-wrapper {
-  margin-left: -400%;
+  transform: translateX(-80%);
 }
 
 .text {
   width: 100%;
-  /* padding: 1rem 0; */
-  font-family: "Brush Script MT", cursive;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   font-size: 1rem;
   color: #fff;
 }
